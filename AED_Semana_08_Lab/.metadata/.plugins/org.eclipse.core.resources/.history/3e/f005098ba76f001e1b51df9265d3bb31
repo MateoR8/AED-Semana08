@@ -78,22 +78,22 @@ public class Problema_8_1 extends JFrame implements ActionListener {
 		btnAdicionar.setBounds(380, 48, 195, 23);
 		contentPane.add(btnAdicionar);
 
-		btnEliminarPares = new JButton("Eliminar números pares");
+		btnEliminarPares = new JButton("Eliminar n meros pares");
 		btnEliminarPares.addActionListener(this);
 		btnEliminarPares.setBounds(380, 78, 195, 23);
 		contentPane.add(btnEliminarPares);
 		
-		btnEliminarImpares = new JButton("Eliminar números impares");
+		btnEliminarImpares = new JButton("Eliminar n meros impares");
 		btnEliminarImpares.addActionListener(this);
 		btnEliminarImpares.setBounds(380, 108, 195, 23);
 		contentPane.add(btnEliminarImpares);
 		
-		btnEliminarRepetidos = new JButton("Eliminar números repetidos");
+		btnEliminarRepetidos = new JButton("Eliminar n meros repetidos");
 		btnEliminarRepetidos.addActionListener(this);
 		btnEliminarRepetidos.setBounds(380, 138, 195, 23);
 		contentPane.add(btnEliminarRepetidos);
 
-		btnPrimerParAlFinal = new JButton("Primer número par al final");
+		btnPrimerParAlFinal = new JButton("Primer n mero par al final");
 		btnPrimerParAlFinal.addActionListener(this);
 		btnPrimerParAlFinal.setBounds(380, 168, 195, 23);
 		contentPane.add(btnPrimerParAlFinal);
