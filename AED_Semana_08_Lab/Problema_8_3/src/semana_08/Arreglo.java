@@ -17,9 +17,7 @@ public class Arreglo {
 	public int obtener(int i) {
 		return n[i];
 	}
-	public void adicionarYreubicar(int numero) {
 
-	}
 	//  Operaciones privadas
 	private void ampliarArreglo() {
 		int[] aux = n;
@@ -34,4 +32,41 @@ public class Arreglo {
 		indice ++;
 	}
 	
+	public void intercambiar(int i, int j) {
+		int aux = n[i];
+		n[i] = n[j];
+		n[j] = aux;
+	}
+	
+	private int buscar(int numero) {
+		for (int i = 0; i < indice; i++)
+			if (n[i] == numero)
+				return i;
+		return -1;
+	}
+
+	public void adicionarYreubicar(int numero) {
+		int num = buscar(numero);
+        if (num == -1) {
+            adicionar(numero);
+        }
+		
+        int[] aux = new int[indice];
+        int auxIndex = 0;
+
+        for (int i = 0; i < indice; i++) {
+            if (n[i] % 2 == 0) {
+                aux[auxIndex] = n[i];
+                auxIndex++;
+            }
+        }
+
+        for (int i = 0; i < indice; i++) {
+            if (n[i] % 2 != 0) {
+                aux[auxIndex] = n[i];
+                auxIndex++;
+            }
+        }
+        n = aux;
+	}
 }

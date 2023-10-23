@@ -82,7 +82,7 @@ public class Problema_8_3 extends JFrame implements ActionListener {
 		scrollPane.setViewportView(txtS);
 	}
 		
-	//  Declaración global
+	//  Declaraci n global
 	Arreglo a = new Arreglo();
 
 	public void actionPerformed(ActionEvent arg0) {
@@ -100,7 +100,7 @@ public class Problema_8_3 extends JFrame implements ActionListener {
 			mensaje("error de ingreso");
 		}
 	}
-	//  Métodos tipo void (sin parámetros)
+	//  M todos tipo void (sin par metros)
 	void imprimir() {
 		imprimir("");
 	}
@@ -113,14 +113,14 @@ public class Problema_8_3 extends JFrame implements ActionListener {
 		for (int i=0; i<a.tamanio(); i++)
 			imprimir("n[" + i + "] : " + a.obtener(i));
 	}
-	//  Métodos tipo void (con parámetros)
+	//  M todos tipo void (con par metros)
 	void imprimir(String s) {
 		txtS.append(s + "\n");
 	}
 	void mensaje(String s) {
 		JOptionPane.showMessageDialog(this, s);
 	}
-	//  Métodos que retornan valor (sin parámetros)
+	//  M todos que retornan valor (sin par metros)
 	int leerNumero()  {
 		return Integer.parseInt(txtNumero.getText().trim());
 	}
